@@ -60,7 +60,7 @@ include 'connectDB.php';
                     <div class='<?php echo (htmlentities($value['titre_film'], ENT_QUOTES)) ?>'>
                         <h1><?php echo (htmlentities($value['titre_film'], ENT_QUOTES)); ?></h1>
                         <img src='<?php echo (htmlentities($value['affiche_film'], ENT_QUOTES)); ?>'>
-                        <div>
+                        <div class='<?php echo (htmlentities($value['titre_film'], ENT_QUOTES)) ?>'>
                             <p>Réalisateur : <?php echo (htmlentities($value['realisateur_film'], ENT_QUOTES)); ?></p>
                             <p>Les acteurs : <?php echo (htmlentities($value['acteurs_film'], ENT_QUOTES)); ?></p>
                             <p>Date de sortie du film : <?php echo (htmlentities($value['date_sortie_film'], ENT_QUOTES)); ?></p>

@@ -1,4 +1,4 @@
-let mainDiv = document.getElementsByTagName('body');
+let mainDiv = document.querySelector('#divWrapperScroll');
 
 $(mainDiv).scroll(function() {
     sessionStorage.scrollTop = $(this).scrollTop();
@@ -21,7 +21,7 @@ let searchQuerySelector = function (event) {
   let needle = event.target.value; // la valeur à chercher
   if (needle) {
     // éléments contenant un bout de cette classe
-    for (const el of document.querySelectorAll(`#wrapperLeft #film div[class*="${needle}"]`)) {
+    for (const el of document.querySelectorAll(`#wrapperLeft > #film > div[class*="${needle}"]`)) {
       el.style.display = "grid";
     }
     // éléments ne contenant pas un bout de cette classe
